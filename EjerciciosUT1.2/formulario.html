@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 align="center">Formulario de Registro</h1>
+    <form>
+        <table border="1" align="center">
+            <tr>
+                <td><label style="margin: 15px; ">Nombre:</label></td>
+                <td colspan="6">
+                    <input type="text" style="border: 1px solid gainsboro; margin-left: 3px;">
+                    <label style="margin: 15px;">F.Nacimiento:</label>
+                    <input type="text" style="border: 1px solid gainsboro;">
+                    <label style="margin: 15px;">DNI:</label>
+                    <input type="text" style="border: 1px solid gainsboro;">
+                </td>
+            </tr>
+            <tr>
+                <td><label style="margin: 10px;">Apellidos:</label></td>
+                <td colspan="6"><input type="text" style="border: 1px solid gainsboro; box-sizing: border-box; width: 500px; margin-left: 2px;" ></td>
+            </tr>
+            <tr>
+                <td><label style="margin: 10px; ">Calle y Numero:</label></td>
+                <td colspan="6"><input type="text" style="width: 500px; border: 1px solid gainsboro; margin-left: 2px;"></td>
+            </tr>
+            <tr>
+                <td ><label style="margin: 10px; ">Codigo postal:</label></td>
+                <td colspan="6">
+                    <input type="text" style="border: 1px solid gainsboro;">
+                    <label style="margin: 10px; ">Ciudad:</label>
+                    <input type="text" style="border: 1px solid gainsboro; width: 350px; margin-right: 8px;">
+                </td>
+
+            </tr>
+            <tr>
+                <td ><label style="margin: 10px; ">Provincia:</label></td>
+                <td colspan="6">
+                    <input type="text" style="border: 1px solid gainsboro;">
+                    <label style="margin: 10px;">Telefono:</label>
+                    <input type="text" style="width: 350px; margin-left: 8px; border: 1px solid gainsboro;">
+                </td>
+                
+            </tr>
+            <tr>
+                <td ><label style="margin: 10px;">Opción:</label></td>
+                <td colspan="6">
+                    <select  style="border: 1px solid gainsboro; width: 200px;">
+                        <option value="opcion1">OPCION 1</option>
+                        <option value="opcion2">OPCION 2</option>
+                        <option value="opcion3">OPCION 3</option>
+                        <option value="opcion4">OPCION 4</option>
+                        <option value="opcion5">OPCION 5</option>
+                        <option value="opcion6">OPCION 6</option>
+                        <option value="opcion7">OPCION 7</option>
+                        <option value="opcion8">OPCION 8</option>
+                    </select>
+                    <label>Escoja una opcion</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label style="margin: 10px;">Comentarios personales:</label></td>
+                <td colspan="6">
+                    <textarea style="border: 1px solid gainsboro;" cols="75" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Pulse aqui:</th>
+                <td style="display: flex; justify-content: center;">
+                    <input type="submit" value="Enviar datos" style=" margin: 5px;">
+                    <input type="reset" value="Borrar los datos" style="margin: 5px;">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+</html>
