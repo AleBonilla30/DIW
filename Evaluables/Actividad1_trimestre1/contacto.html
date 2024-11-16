@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utils/style.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="utils/imagenes/logo.jpg" alt="Logo" class="logo">
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="producto.html" class="menu">Pinturas</a></li>
+                <li><a href="index.html" class="menu">About us</a></li>
+                <li><a href="contacto.html" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form>
+            <div class="container">
+                <fieldset>
+                    <legend>Formulario de Contacto</legend>
+                    <label for="departamento">Departamento:</label>
+                    <select name="departamento" >
+                        <option value="infromacion">Información</option>
+                        <option value="ventas">Ventas</option>
+                    </select>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre"required>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" name="apellido" required>
+                    <label for="numero">Telefono:</label>
+                    <input type="number" name="numero" required>
+                    <label for="genero">Género:</label>
+                    <div class="genero-contenedor">
+                        <div class="genero-opcion">
+                            <input type="radio" name="genero" value="hombre" required>
+                            <label for="hombre">Hombre</label>
+                        </div>
+                        <div class="genero-opcion">
+                            <input type="radio" name="genero" value="mujer" required>
+                            <label for="mujer">Mujer</label>
+                        </div>
+                        <div class="genero-opcion">
+                            <input type="radio" name="genero" value="otro" required>
+                            <label for="otro">Otro</label>
+                        </div>
+                    </div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" required>
+                    <label for="comentario">Escribe tu mensaje:</label>
+                    <textarea name="comentario" rows="5" cols="80"  required></textarea>
+                    <div class="politica-contenedor">
+                        <input type="checkbox" name="politica" required>
+                        <label for="politica">Acepto la <a href="#">política de privacidad</a></label>
+                    </div>
+                    <div class="boton-contenedor">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <p class="aviso-contacto">AleBo Acrylic Paints, como responsable del tratamiento de datos,
+                        gestionará tu información con el fin de responder a tu consulta o petición de forma adecuada. 
+                        Tienes derecho a acceder, rectificar y eliminar tus datos, además de ejercer otros derechos que garantizan tu privacidad. 
+                        Para más información, consulta nuestra Política de Privacidad, donde te explicamos de manera detallada cómo protegemos y manejamos tu información personal.</p>
+                    
+
+                </fieldset>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AleBo Acrylic paints Todos los derechos reservados. <span><a href="#"> Aviso Legal |</a> <a href="#">Canal de denuncias</a></span></p>
+    </footer>
+</body>
+</html>
