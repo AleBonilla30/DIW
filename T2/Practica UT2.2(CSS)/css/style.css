@@ -21,6 +21,7 @@ body {
 
 .cabecera{
   background-color: #2b463c;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding: 10px 0;
 }
@@ -36,9 +37,9 @@ body {
   gap: 20px; 
   width: 35%;
   margin-left: 100px;
-  margin-top: 20px;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  margin-top: 10px/*  */;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .estilo_editores, .estilo_navegadores{
@@ -50,16 +51,17 @@ body {
 
 h2{
   width: 100%;
-  margin: 0;
+  margin-top: 0;
   background-color: #2b463c;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-align: center;
   box-sizing: border-box;
-
 }
 
 h3{
-  background-color: #4682b4;
+  background-color: #3772a2;/* #4682b4 */
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   margin: 0;
   padding: 2px;
@@ -67,6 +69,7 @@ h3{
 
 p{
   background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 3px;
 }
