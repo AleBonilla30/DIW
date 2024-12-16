@@ -36,21 +36,17 @@ a{
 .primeras-fotos {
     width: 100%;
     height: 250px;
-    max-width: 600px;
     border-radius: 20px;
 }
 
 .segundas-fotos{
     width: 100%;
     height: 150px;
-    max-width: 500px;
     border-radius: 20px;
 }
 
 .content_principal, .articles{
-    
     display: flex;
-    flex: 0;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
@@ -62,12 +58,14 @@ a{
     margin-left: 50px;
     justify-content: right;
     border-top: 1px solid rgb(115, 113, 113);
+    box-sizing: border-box;
 }
 .articles{
     width: 90%;
     margin-left: 50px;
     justify-content: right;
     border-bottom: 1px solid rgb(115, 113, 113);
+    box-sizing: border-box;
 }
 
 
