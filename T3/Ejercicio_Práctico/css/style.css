@@ -1,0 +1,114 @@
+body{
+    font-family: "Lobster", sans-serif;
+    color: rgb(115, 113, 113);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cabecera{
+    text-align: center;
+    font-size: 15px;
+    
+}
+nav{
+    margin-right: 150px;
+    margin-bottom: 60px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+nav a {
+    flex: 1 1 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(115, 113, 113);
+}
+
+
+.primeras-fotos {
+    width: 100%;
+    height: 250px;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+.segundas-fotos{
+    width: 100%;
+    height: 150px;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.content_principal, .articles{
+    
+    display: flex;
+    flex: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.content_principal{
+    width: 90%;
+    margin-left: 50px;
+    justify-content: right;
+    border-top: 1px solid rgb(115, 113, 113);
+}
+.articles{
+    width: 90%;
+    margin-left: 50px;
+    justify-content: right;
+    border-bottom: 1px solid rgb(115, 113, 113);
+}
+
+
+.imagen-texto{
+    flex: 2 2 0;
+    border: 1px solid gainsboro;
+    padding: 20px;
+    max-width: 500px; 
+    border-radius: 20px;
+    text-align: center;
+
+}
+.texto1{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.foto-texto2{
+    flex:  1 1 0 ;
+    padding: 10px;
+    max-width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid gainsboro;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+address p {
+    font-size: 15px;
+    margin-right: 150px;
+}
+.copyright{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.social{
+    display: flex;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
