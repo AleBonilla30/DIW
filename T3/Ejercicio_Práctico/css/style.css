@@ -1,3 +1,4 @@
+
 body{
     font-family: "Lobster", sans-serif;
     color: rgb(115, 113, 113);
@@ -16,15 +17,16 @@ body{
     
 }
 nav{
-    margin-right: 150px;
-    margin-bottom: 60px;
-    padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    flex: 0 0 150px;
+    
 }
 nav a {
     flex: 1 1 0;
+    margin-right: 40px;
     text-align: center;
 }
 a{
@@ -47,25 +49,19 @@ a{
 
 .content_principal, .articles{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     justify-content: center;
     padding: 10px;
     
 }
-.content_principal{
+hr{
     width: 90%;
-    margin-left: 50px;
-    justify-content: right;
-    border-top: 1px solid rgb(115, 113, 113);
-    box-sizing: border-box;
+    border: 1px solid rgb(188, 188, 188);
 }
+
 .articles{
-    width: 90%;
-    margin-left: 50px;
-    justify-content: right;
-    border-bottom: 1px solid rgb(115, 113, 113);
-    box-sizing: border-box;
+    margin-left: 110px;
 }
 
 
@@ -98,7 +94,6 @@ footer{
 }
 address p {
     font-size: 15px;
-    margin-right: 150px;
 }
 .copyright{
     margin-top: 30px;
@@ -106,7 +101,8 @@ address p {
 }
 .social{
     display: flex;
-    height: 50px;
+    gap: 2px;
+    height: 40px;
     margin-top: 10px;
     margin-right: 20px;
 }

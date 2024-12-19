@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 10px;
+
+}
+.header {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.fresa, .cereza, .pera, .platano, .sandia{
+    display: flex;
+    flex-direction: column; 
+    width: 310px;
+    height: 310px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(211, 210, 210);
+    
+}
+img {
+    padding: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 0 10px;
+}
+.titulo{
+    width: 100%;
+    height: auto;
+    align-self: center;
+    background-color: rgb(211, 210, 210) ;
+    box-sizing: border-box;
+    
+}
+p{
+    margin: 5px;
+    text-align: justify;
+    overflow: hidden;
+}
