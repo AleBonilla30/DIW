@@ -1,0 +1,52 @@
+body{
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#british, #national{
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border: 10px solid red;
+    margin: 20px;
+}
+
+.uno{
+    display: flex;
+    flex-direction: row;
+    
+}
+.uno-link{
+    border: 10px solid red;
+}
+.texto{
+    margin-left: 20px;
+}
+
+img{
+    border: 10px solid orange;
+}
+
+#tate, #natural{
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    padding: 20px;
+    border: 10px solid orange;
+}
+.dos{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.dos-link{
+    border: 10px solid yellow;
+}
+a{
+    color: rgb(242, 173, 45);
+}
+
+
