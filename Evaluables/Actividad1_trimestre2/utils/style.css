@@ -1,0 +1,82 @@
+.navbar{
+    background-image: url('./imagenes/portada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 40vh;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: white !important; /* Asegura que sea visible sobre el fondo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #01e2e2 !important; 
+}
+
+/* contenido pagina principal */
+.colIzquierda{
+    background-image: url('./imagenes/fondoAboutUs.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.colIzquierda h2, .colDerecha h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.colIzquierda p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.colDerecha{
+    background-color: #fcf8dd;
+}
+
+.colDerecha h2{
+    margin-left: 50px;
+}
+.colDerecha p{
+    font-weight: bold;
+}
+
+.formulario{
+    border: 1px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+footer a:hover {
+    color: #01e2e2;
+} 
+
+/* segunda pagina */
+.cards{
+    box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+}
