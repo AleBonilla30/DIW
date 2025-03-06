@@ -1,0 +1,220 @@
+body{
+    background-image: url('img/fondo.jpg');
+    font-family: "Bebas Neue", sans-serif;;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    z-index: -1;
+}
+
+.header{
+    position: relative;
+    background-image: url('img/cabecera.jpg');
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.header::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+.nav-link{
+    font-size: 1.5rem;
+    color: rgba(29, 99, 99, 0.682);
+    
+}
+.nav-link:hover{
+    color: white;
+    text-shadow: 0 4px 15px rgba(255,255,255,0.5);
+}
+.navbar-toggler{
+    color: #000;
+    border: 1px solid rgb(99, 95, 95);
+    box-shadow: 2px 4px 8px rgba(255,255,255,0.5);
+} 
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+hr{
+    width: 90%;
+    border: 8px solid rgb(29, 99, 99);
+}
+h2{
+    font-size: 80px;
+    text-align: center;
+}
+.lead{
+    padding: 10px;
+    max-width: 500px;
+    box-shadow: 1px 4px 8px rgba(29, 99, 99, 0.682);
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+
+.contenido{
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+    z-index: 1;
+}
+.container-p{
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px; /* Aumentamos la perspectiva para un mejor efecto 3D */
+    
+}
+.center{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: rotate-cards 15s infinite linear; /* Animación de rotación */
+    transform-style: preserve-3d;
+}
+.card{
+    position: absolute;
+    padding: 10px;
+    width: 14rem;
+    height: 14rem;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+}
+
+/* Posicionamiento de las cartas */
+.card-1 {
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+}
+.card-2 {
+    transform: translate(-50%, -50%) rotateY(72deg) translateZ(300px);
+}
+.card-3 {
+    transform: translate(-50%, -50%) rotateY(144deg) translateZ(300px);
+}
+.card-4 {
+    transform: translate(-50%, -50%) rotateY(216deg) translateZ(300px);
+}
+.card-5 {
+    transform: translate(-50%, -50%) rotateY(288deg) translateZ(300px);
+}
+
+
+@keyframes rotate-cards {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+.audio{
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 30%;
+}
+
+.footer{
+    background-color: rgba(29, 99, 99, 0.682);
+    color: white;
+    padding: 1rem 0;
+}
+
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .container-p {
+        height: 400px; /* Reducir la altura del contenedor */
+        perspective: 500px; /* Reducir la perspectiva */
+    }
+
+    .card {
+        width: 14rem; /* Reducir el tamaño de las cartas */
+        height: 14rem;
+    }
+
+    /* Ajustar el translateZ para dispositivos pequeños */
+    .card-1 {
+        transform: translate(-50%, -50%) rotateY(0deg) translateZ(150px);
+    }
+    .card-2 {
+        transform: translate(-50%, -50%) rotateY(72deg) translateZ(150px);
+    }
+    .card-3 {
+        transform: translate(-50%, -50%) rotateY(144deg) translateZ(150px);
+    }
+    .card-4 {
+        transform: translate(-50%, -50%) rotateY(216deg) translateZ(150px);
+    }
+    .card-5 {
+        transform: translate(-50%, -50%) rotateY(288deg) translateZ(150px);
+    }
+}
+
+/* Media Queries para dispositivos muy pequeños (móviles) */
+@media (max-width: 480px) {
+    .container-p {
+        height: 300px; /* Reducir aún más la altura */
+        perspective: 300px; /* Perspectiva más pequeña */
+    }
+
+    .card {
+        width: 10rem; /* Cartas más pequeñas */
+        height: 10.5rem;
+    }
+
+    /* Ajustar el translateZ para móviles */
+    .card-1 {
+        transform: translate(-50%, -50%) rotateY(0deg) translateZ(100px);
+    }
+    .card-2 {
+        transform: translate(-50%, -50%) rotateY(72deg) translateZ(100px);
+    }
+    .card-3 {
+        transform: translate(-50%, -50%) rotateY(144deg) translateZ(100px);
+    }
+    .card-4 {
+        transform: translate(-50%, -50%) rotateY(216deg) translateZ(100px);
+    }
+    .card-5 {
+        transform: translate(-50%, -50%) rotateY(288deg) translateZ(100px);
+    }
+}
+
+
+@media (max-width: 430px ) {
+    .header{
+        /* background-image: url('img/cabeceraMovil.jpg');  */
+        background-position: center;
+        background-size: cover;
+    }
+
+}
